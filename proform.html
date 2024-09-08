@@ -1,0 +1,310 @@
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+   body{
+background-repeat:;
+background-attachment:;
+background-position:;
+background-size:;  
+height:;
+width:100%;
+ padding-bottom:;
+color:black;}
+
+body {
+  font-family: Arial;
+}
+TABLE{
+  width:100%;
+  border-spacing:15PX;
+background-color:;}
+TD{width:;
+  PADDING:15PX;
+background-color:;
+}
+.navbar {
+            background: transparent; /* No background for navbar */
+            border: none; /* Remove border */
+            border-radius: 15px; /* Curved border */
+            padding: 0; /* Remove padding */
+        }
+        .navbar-header .navbar-toggle .icon-bar {
+            background-color: white; /* Color for the bars in the toggle button */
+        }
+        .navbar-brand b {
+            color: red; /* Brand name color */
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+        .navbar-nav > li > a {
+            color: white; /* Font color for nav items */
+            font-size: 16px; /* Font size for nav items */
+            text-shadow: none; /* Remove text shadow */
+        }
+        .navbar-nav > li > a:hover,
+        .navbar-nav > li.active > a {
+            color: #00BFFF; /* Hover and active link color */
+            background-color: transparent; /* No background color on hover or active */
+        }
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background for dropdown */
+            border: none; /* Remove border */
+            border-radius: 15px; /* Curved border for dropdown */
+        }
+        .dropdown-menu > li > a {
+            color: white; /* Font color for dropdown items */
+        }
+        .dropdown-menu > li > a:hover {
+            color: #00BFFF; /* Hover color for dropdown items */
+            background-color: transparent; /* Background color on hover */
+        }
+</style>
+</head>
+<body background="assets/images/bg.jpg" style="background-color:black;padding:5px;color:white">
+
+  <nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <b>JobHive</b>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="index.html"><b>Home</b></a></li>
+                <li class="active"><a href="#"><b>Resume Builder</b></a></li>
+                <li><a href="jobs1.html"><b>Jobs</b></a></li>
+                <li><a href="register.html"><b>Register</b></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    
+      
+    <header class = "header bg-bright" id = "header">
+        <div class = "container">
+            <div class = "header-content text-center">
+                <h6 class = "text-uppercase text-blue-dark fs-14 fw-6 ls-1">online resume builder</h6>
+                <h1 class = "lg-title">Only 2% of resumes make it past the first round. Be in the top 2%</h1>
+                <p class = "text-dark fs-18">Use professional field-tested resume templates that follow that exact 'resume rules' employers look for. Easy to use and done within minutes - try now for free!</p>
+                <a href = "#" class = "btn btn-primary text-uppercase">Get Started</a>
+                
+            </div>
+        </div>
+    </header>
+
+      
+      <BR><BR><BR>
+      <div class="container">
+      <form action="/action_page.php">
+      <div class="form-group">
+      <TABLE ALIGN="CENTER"> 
+
+        <H3>PERSONAL DETAILS</H3><HR>
+
+      <TR><TD><label>NAME:</label></TD>
+        <TD><input type="text" class="form-control" name="n" id="" placeholder="PRIYA" autofocus required maxlength="20">
+          <div class="form-group"></TD>
+        <TD><label>SURNAME:</label></TD>
+        <TD><input type="text" class="form-control" name="Sn" id="" placeholder="AGARWAL"maxlength="20">
+            <div class="form-group"></TD>
+      </TR>
+
+      <TR><TD><label>EMAIL*</label></TD>
+        <TD><input type="email" class="form-control" name="EM" id="" placeholder="priya@sample.in" required >
+          <div class="form-group"></TD>
+        <TD><label>PHONE</label></TD>
+        <TD><input type="tel" class="form-control" name="no" id="" placeholder="+91 1234567890" pattern="+[0-9]{2} [0-9]{10}" size="20">
+            <div class="form-group"></TD>
+      </TR>
+
+      <TR><TD><label>CITY</label></TD>
+        <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:MUMBAI" required >
+          <div class="form-group"></TD>
+        <TD><label>COUNTRY</label></TD>
+        <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:INDIA" >
+          </TD>
+      </TR>
+
+      <TR><TD><B>UPLOAD IMAGE :</B></TD>
+      <TD><div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      
+    </div></TD>
+  <TD><LABEl>GENDER</LABEl></TD>
+    <TD>
+  <div class="form-check-inline"><label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">MALE
+    </label></div>
+  <div class="form-check-inline"><label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">FEMALE
+    </label></div>
+    <div class="form-check-inline"><label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" DISABLED>OTHERS
+      </label></div></TD></TR>
+  </TABLE>
+    
+  <H3>WORK HISTORY</H3><HR>
+  <TABLE>
+    
+    <TR><TD><label>JOB TITLE:</label></TD>
+    <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:HR" required >
+      <div class="form-group"></TD>
+    <TD><label>EMPLOYER:</label></TD>
+    <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:ZOHO" >
+      </TD>
+  </TR>
+
+    
+    <TR><TD><label>CITY</label></TD>
+        <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:MUMBAI" required >
+          <div class="form-group"></TD>
+        <TD><label>COUNTRY</label></TD>
+        <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:INDIA" >
+          </TD>
+      </TR>
+
+      <TR><TD><label>START DATE</label></TD>
+        <TD><input type="MONTH" class="form-control" name="" id="" placeholder="" >
+          <div class="form-group"></TD>
+        <TD><label>END DATE</label></TD>
+        <TD><input type="MONTH" class="form-control" name="" id="" placeholder="" >
+          </TD>
+      </TR>
+
+      <TR><TD><div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="switch1">
+        <label class="custom-control-label" for="switch1">I CURRENTLY WORK THERE</label>
+      </div></TD></TR>
+
+
+    </TABLE>
+
+    <H3>EDUCATION</H3><HR>
+      <TABLE>
+        
+        <TR><TD><label>SCHOOL NAME</label></TD>
+        <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:BIT" required >
+          <div class="form-group"></TD>
+        <TD><label>SCHOOL LOCATION</label></TD>
+        <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:HYDRABAD" >
+          </TD>
+      </TR>
+      <TR><TD>
+      <div class="form-group">
+        <label>DEGREE:</label></TD>
+        <TD><select class="form-control" id="sel" STYLE="ColoR:DARKBLUE;">
+        <option>SELECT</option>
+        <option>BUSINESS</option>
+        <option>ENGINEERING</option>
+        <option>ACCOUNTING</option>
+        <option>COMPUTER SCIENCES</option>
+        <option>ECONOMICS</option>
+        <option>SOCIAL SCIENCES</option>
+        <option>HUMANITIES</option>
+        <option>AGRICULTURE</option>
+        <option>HEALTH SCIENCES</option>
+        </select></div>
+      </TD>
+    <TD><B>FEILD OF STUDY</B></TD>
+      <TD><input type="TEXT" class="form-control" name="" id="" placeholder="E.G:COMPUTER SCIENCE AND ENGINEERING" ></TD>
+    </TR>
+
+    <TR><TD>
+      <LABEl>GRADUATION DATE (OR <br> EXPECTED GRADUATION DATE)</LABEl>
+    </TD>
+  <TD>
+    <input type="MONTH" class="form-control" name="" id="" placeholder="" >
+  </TD>
+  <TD><div class="form-group">
+    <label for="comment">ADD ANY ADDITIONAL COURSEWORK<BR> YOU'RE PROUD TO SHOWCASE</label></TD>
+    <TD><textarea class="form-control" rows="5" id="comment"></textarea>
+  </TD></div></TR>
+
+      </TABLE>
+    
+
+      <h3>SKILLS</h3><HR>
+        <div class="container" STYLE="font-size: 17PX;">
+    
+<TABLE>
+          <FORM>
+            <TR>
+              <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">ABILITY TO MULTITASK
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">TEAM PLAYER
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">MICROSOFT POWERPOINT
+            </label></TD></TR>
+            <TR>
+              <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">ADAPTABILITY
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">CRITICAL THINKING
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">TEAMWORK SKILLS
+            </label></TD>
+          </TR>
+          
+        <TR><TD>
+            <label class="checkbox-inline">
+              <input type="checkbox" value="">CREATIVITY
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">MS OFFICE
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">PROBLEM SOLVING
+            </label></TD>
+          </TR>
+        <TR><TD>
+            <label class="checkbox-inline">
+              <input type="checkbox" value="">COMMUNICATION
+            </label></TD>
+          <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">TIME MANAGEMENT
+            </label></TD>
+            <TD><label class="checkbox-inline">
+              <input type="checkbox" value="">COLLABORATION
+            </label></TD>
+            </TR>
+          </form>
+        </div>
+      </TABLE>
+      
+
+      <h3>SHARE MORE ABOUT YOURSELF</h3><HR>
+      <div class="form-group">
+        <label for="comment"></label>
+    <textarea class="form-control" rows="5" id="comment" placeholder="SHOW YOUR EXPERTISE AND PASSION! HERE ARE SOME POPULAR ONES INCLUDED BY OTHERS.<BR> LANGUAGES,AWARDA,ACCOMPLISHMENTS AND HONORS.,CERTIFICATIONS,ACTIVITIES,WEBSITES AND SOCIAL LINKS,REFERENCES,PROJECTS..."></textarea>
+        </div>
+      
+      
+           <br><br>
+           <button type="submit" class="btn btn-success">Submit</button>
+           <button type="reset" class="btn btn-danger">Reset</button>
+      
+
+
+</body>
+</html>
+

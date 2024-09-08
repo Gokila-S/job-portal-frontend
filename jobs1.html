@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            color: white;
+        }
+
+        td:hover {
+            color: lightgray;
+            font-size: 18px;
+        }
+
+        table {
+            border-spacing: 13px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        td {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+
+        div {
+            margin-left: 20px;
+            float: left;
+        }
+
+        button {
+            float: right;
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar {
+            background: transparent;
+            border: none;
+            border-radius: 15px;
+            padding: 0;
+        }
+
+        .navbar-header .navbar-toggle .icon-bar {
+            background-color: white;
+        }
+
+        .navbar-brand b {
+            color: red;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+
+        .navbar-nav > li > a {
+            color: white;
+            font-size: 16px;
+            text-shadow: none;
+        }
+
+        .navbar-nav > li > a:hover,
+        .navbar-nav > li.active > a {
+            color: #00BFFF;
+            background-color: transparent;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            border-radius: 15px;
+        }
+
+        .dropdown-menu > li > a {
+            color: white;
+        }
+
+        .dropdown-menu > li > a:hover {
+            color: #00BFFF;
+            background-color: transparent;
+        }
+
+        ul {
+            color: rgb(84, 232, 255); /* Changed from red to gold */
+        }
+    </style>
+</head>
+
+<body background="assets/images/bg.jpg" style="padding-top:5px;">
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <b>JobHive</b>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="proform.html"><b>Resume Builder</b></a></li>
+                    <li class="active"><a href="jobs1.html"><b>Jobs</b></a></li>
+                    <li><a href="register.html"><b>Register</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <marquee>
+        <h2 style="font-size: 30px; color: white;"><b>Recent Hot Jobs ❗</b></h2>
+    </marquee>
+    <hr><br>
+    <center>
+        <table border style="width:70%">
+            <div>
+                <tr>
+                    <td id="img"><img src="assets/images/14.jpeg" width="100px" align="left">
+                        Google<br><br>
+                        <b>Product Lead</b><br><br>
+                        Bangalore, India | Remote work available<br><br>
+                        🕒 Full-time &nbsp 💼 10+ years experience<br>
+                        <ul>
+                            <br>Communicate effectively in a cross-functional product development team.
+                            <br>Present ideas and designs effectively.
+                        </ul>
+                        <a href="#"><button>Click to apply</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="img"><img src="assets/images/15.jpeg" width="100px" height="100px" align="left">
+                        Truecaller<br><br>
+                        <b>Product Designer</b><br><br>
+                        Chennai, India<br><br><br>
+                        🕒 Full-time &nbsp 💼 2-3 years experience<br>
+                        <ul>
+                            <br>Establish creative direction and develop concepts together with the product team.<br>
+                            Help developers and visual designers with solving design challenges, etc.
+                        </ul>
+                        <a href="#"><button>Click to apply</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="img"><img src="assets/images/12.jpeg" width="100px" align="left">
+                        Amazon<br><br>
+                        <b>Business Development Manager</b><br><br>
+                        New Delhi, India<br><br>
+                        🕒 Part-time &nbsp 💼 3-5 years experience<br><br>
+                        <ul>
+                            <br>Communicate effectively in a cross-functional product development team.<br>
+                            Present ideas and designs effectively.
+                        </ul>
+                        <a href="https://www.amazon.jobs/en/landing_pages/online-application"><button>Click to apply</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="img"><img src="assets/images/11.jpeg" width="100px" align="left">
+                        Myntra<br><br>
+                        <b>UX Designer</b><br><br>
+                        Hyderabad, India | Remote work available<br><br>
+                        🕒 Part-time &nbsp 💼 2-3 years experience<br>
+                        <ul>
+                            <br>Closely collaborate with the product management and engineering teams to identify product goals and vision.<br>
+                            You will build intuitive, beautiful, and meaningful designs.
+                        </ul>
+                        <a href="https://www.broadcom.com/company/careers"><button>Click to apply</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="img"><img src="assets/images/4.jpeg" width="100px" align="left">
+                        Zoho<br><br>
+                        <b>Junior Web Developer</b><br><br>
+                        Bangalore, India<br><br>
+                        🕒 Internship &nbsp 💼 Fresher<br>
+                        <ul>
+                            <br>Identifying opportunities for new products.<br>
+                            Design new products related to the industry.
+                        </ul>
+                        <button onclick="#">Click to apply</button>
+                    </td>
+                </tr>
+            </div>
+        </table><br><br>
+
+        <ul class="pager">
+            <li><a href="index.html">Previous</a></li>
+            <li><a href="jobs2.html">Next</a></li>
+        </ul>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<html>
+    <head>
+      
+        <title>
+            HomePage
+        </title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    
+  .marquee {
+  width: 100%;
+  height: 180px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 1px solid black;
+   background-color:white;
+}
+
+
+.marquee-content {
+  display: inline-block;
+  margin-top: 5px;
+  animation: marquee 15s linear infinite;
+}
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 15s linear infinite;
+}
+@keyframes swap {
+  0%, 50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+.marquee-content:hover {
+  animation-play-state: paused
+}
+
+/* Transition */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+      b {
+  text-shadow: 2px 2px 5px black;
+}
+
+body{
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position:justify;
+background-size:cover;  
+height:1000px;
+width:100%;
+ padding-bottom:800px;
+color:white;}
+
+body {
+  font-family: Arial;
+}
+
+
+  .grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color:;
+  padding: 50px;
+}
+
+.grid-item {
+  background-color: ;
+  border: 1px inset white;
+  padding: 30px;
+  font-size: 18px;
+  color:white;
+  text-align: center;
+}
+h3{
+  color:rgb(53, 213, 213);
+  text-shadow: 2px 2px 5px darkblue;
+  
+}
+
+.navbar {
+            background: transparent; /* No background for navbar */
+            border: none; /* Remove border */
+            border-radius: 15px; /* Curved border */
+            padding: 0; /* Remove padding */
+        }
+        .navbar-header .navbar-toggle .icon-bar {
+            background-color: white; /* Color for the bars in the toggle button */
+        }
+        .navbar-brand b {
+            color: red; /* Brand name color */
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+        }
+        .navbar-nav > li > a {
+            color: white; /* Font color for nav items */
+            font-size: 16px; /* Font size for nav items */
+            text-shadow: none; /* Remove text shadow */
+        }
+        .navbar-nav > li > a:hover,
+        .navbar-nav > li.active > a {
+            color: #00BFFF; /* Hover and active link color */
+            background-color: transparent; /* No background color on hover or active */
+        }
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background for dropdown */
+            border: none; /* Remove border */
+            border-radius: 15px; /* Curved border for dropdown */
+        }
+        .dropdown-menu > li > a {
+            color: white; /* Font color for dropdown items */
+        }
+        .dropdown-menu > li > a:hover {
+            color: #00BFFF; /* Hover color for dropdown items */
+            background-color: transparent; /* Background color on hover */
+        }
+
+    </style>
+    </head>
+    <body background="assets/images/bg.jpg" style="padding-top:5px;">
+
+      <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <b>JobHive</b>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#"><b>Home</b></a></li>
+                    <li><a href="proform.html"><b>Resume Builder</b></a></li>
+                    <li><a href="jobs1.html"><b>Jobs</b></a></li>
+                    <li><a href="register.html"><b>Register</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+
+          
+<br><BR>
+    
+  <div class="column content" style="padding-right:15px;">
+    <h1 align="center" style="font-size:100px;color:rgb(227, 0, 0);"><b>JobHive</b></h1>
+    <p align="center" style="font-size:50px;color:white;">Your Gateway to Career Opportunities.</p><br>
+    <p align="center" style="color:white">Tired of endless job hunts❓<br>
+      Don't worry, <b style="color:orangered">Sign up</b> to get started.<br>
+      Already have an account? <b style="color:blue">Login</b>.
+    </p>
+  </div>
+  
+  <br>
+  
+  <table align="center">
+    <tr>
+      <td style="padding: 20;">
+        <a href="signup.html">
+          <button class="sss" style="font-size:25px;background-color:rgb(7, 7, 63);color:white;border-radius:15px;border-color:white;">Sign up</button>
+        </a>
+      </td>
+      <td style="padding-right: 20;">
+        <a href="login.html">
+          <button class="sss" style="font-size:25px;background-color:rgb(7, 7, 63);color:white;border-radius:15px;border-color:white;">Login</button>
+        </a>
+      </td>
+    </tr>
+  </table>
+  
+    <br><br><br>
+
+    <h3 style="color:orangered;"><b>Get Hired by Top Recruiters Online❕</b></h3>
+    <hr>
+    <div class="marquee">
+      <div class="marquee-content">
+        <span class="item-collection-1">
+          <span><img src="assets/images/1.jpeg" width="150"></span>
+          <span><img src="assets/images/2.jpeg" width="150"></span>
+          <span><img src="assets/images/3.jpeg" width="150"></span>
+          <span><img src="assets/images/4.jpeg" width="150"></span>
+          <span><img src="assets/images/5.jpeg" width="150"></span>
+          <span><img src="assets/images/6.jpeg" width="150"></span>
+          <span><img src="assets/images/7.jpeg" width="150"></span>
+        </span>
+        <span class="item-collection-2">
+          <span><img src="assets/images/8.jpeg" width="150"></span>
+          <span><img src="assets/images/9.jpeg" width="150"></span>
+          <span><img src="assets/images/10.jpeg" width="150"></span>
+          <span><img src="assets/images/11.jpeg" width="150"></span>
+          <span><img src="assets/images/12.jpeg" width="150"></span>
+          <span><img src="assets/images/13.jpeg" width="150"></span>
+          <span><img src="assets/images/14.jpeg" width="150"></span>
+        </span>
+      </div>
+    </div>
+    
+
+<div class="grid-container">
+  <div class="grid-item"><h3>Register Your Account</h3>The claims of duty or the obligtaion of business it will frequently occur that pleasus have to be accepted</div>
+  <div class="grid-item"><h3>Upload Your Resume</h3>Best way to show your outstanding skill by creating portfolio and get more clients</div>
+  <div class="grid-item"><h3>Apply For Dream Job</h3>Find the right freelancer to begin working on your project within minutes</div> 
+</div>
+            
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: transparent;">
+  <!-- Section: Social media -->
+  <section>
+      <!-- Left -->
+      <div class="me-5">
+          <br><br>
+          <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+          <a href="#" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+              <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+              <i class="fab fa-github"></i>
+          </a>
+      </div>
+      <!-- Right -->
+  </section>
+  <br><br>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section>
+      <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold"><b>JobHive</b></h6>
+                  <hr />
+                  <p>
+                      Tired of restless job hunts? Don't worry, we'll help you. JobHive is made for people like you, who care for their careers.
+                      <b style="color:red;font-size:25px"><br>Get Hired</b>
+                  </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Pages</h6>
+                  <hr />
+                  <p><a href="#!" class="text-white">Home</a></p>
+                  <p><a href="jobs1.html" class="text-white">Jobs</a></p>
+                  <p><a href="proform.html" class="text-white">Tools</a></p>
+                  <p><a href="#!" class="text-white">About us</a></p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Useful links</h6>
+                  <hr />
+                  <p><a href="signup.html" class="text-white">Sign Up</a></p>
+                  <p><a href="register.html" class="text-white">Upload Resume</a></p>
+                  <p><a href="jobs1.html" class="text-white">Find companies</a></p>
+                  <p><a href="#!" class="text-white">Help</a></p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <hr />
+                  <p><i class="fas fa-home mr-3"></i> Bangalore, 10012, India</p>
+                  <p><i class="fas fa-envelope mr-3"></i> jobhive@123.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> +01 234 567 88</p>
+                  <p><i class="fas fa-print mr-3"></i> +01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+      </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <br><br>
+  <div class="text-center p-3" style="background-color: transparent;">
+      © 2023 Copyright:
+      <a class="text-white" href="mailto:info@jobhive.in">info@jobhive.in</a>
+  </div>
+  <br><br>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-image: url('assets/images/bg.jpg'); /* Replace with your dark background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            position: relative; /* Set to relative for child positioning */
+        }
+
+        .login-container h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            background-color: #333;
+            border: 1px solid #444;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .form-control:focus {
+            border-color: #00BFFF;
+            box-shadow: none;
+        }
+
+        .btn-login {
+            background-color: #00BFFF;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-login:hover {
+            background-color: #007ACC;
+        }
+
+        .cross-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cross-btn:hover {
+            color: red;
+        }
+
+        .login-options {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .login-options a {
+            color: #00BFFF;
+            text-decoration: none;
+        }
+
+        .login-options a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <button class="cross-btn" onclick="window.location.href='index.html'">&times;</button>
+        <h2>Login</h2>
+
+        <form action="dashboard.html" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-login">Login</button>
+        </form>
+
+        <div class="login-options">
+            <p><a href="signup.html">New User? Sign Up</a></p>
+            <p><a href="forgot-password.html">Forgot Password?</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
